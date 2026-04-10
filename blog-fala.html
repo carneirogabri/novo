@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atraso na Fala Infantil: o que é normal e o que merece avaliação – Crescit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/jpeg" href="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+
+    <style>
+        .article-hero { padding-top: 8rem; background: var(--white); }
+        .article-hero-img { width: 100%; height: 48rem; object-fit: cover; display: block; }
+
+        .article-wrap { max-width: 82rem; margin: 0 auto; padding: 6rem 2rem 10rem; }
+
+        .breadcrumb { display: flex; align-items: center; gap: .8rem; font-size: 1.3rem; color: var(--text-muted); margin-bottom: 3rem; flex-wrap: wrap; }
+        .breadcrumb a { color: var(--green-primary); font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb i { font-size: 1rem; }
+
+        .article-category { display: inline-flex; align-items: center; gap: .6rem; background: var(--green-light); border: 1px solid var(--green-tag); color: var(--green-primary); font-size: 1.25rem; font-weight: 700; padding: .5rem 1.4rem; border-radius: 5rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2rem; }
+
+        .article-title { font-family: 'Sora', sans-serif; font-size: 4.4rem; font-weight: 800; color: var(--text-dark); line-height: 1.18; margin-bottom: 2rem; }
+
+        .article-meta { display: flex; align-items: center; gap: 2.4rem; flex-wrap: wrap; padding: 2rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 4rem; }
+        .article-meta-author { display: flex; align-items: center; gap: 1.2rem; }
+        .article-meta-av { width: 4.4rem; height: 4.4rem; border-radius: 50%; background: #A8E6BF; color: #1A5C35; font-weight: 800; font-size: 1.6rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .article-meta-av-name { font-size: 1.4rem; font-weight: 800; color: var(--text-dark); }
+        .article-meta-av-role { font-size: 1.2rem; color: var(--text-muted); }
+        .article-meta-info { display: flex; gap: 2rem; flex-wrap: wrap; margin-left: auto; }
+        .article-meta-info span { font-size: 1.3rem; color: var(--text-muted); display: flex; align-items: center; gap: .5rem; font-weight: 600; }
+        .article-meta-info span i { color: var(--green-primary); }
+
+        .article-body { font-size: 1.7rem; color: var(--text-mid); line-height: 1.8; }
+        .article-body p { margin-bottom: 2.4rem; }
+        .article-body h2 { font-family: 'Sora', sans-serif; font-size: 2.6rem; font-weight: 800; color: var(--text-dark); margin: 4rem 0 1.6rem; line-height: 1.25; }
+        .article-body h3 { font-family: 'Sora', sans-serif; font-size: 2rem; font-weight: 700; color: var(--text-dark); margin: 3rem 0 1.2rem; }
+
+        .highlight-box { background: var(--green-light); border-left: 4px solid var(--green-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 2.4rem 3rem; margin: 3rem 0; }
+        .highlight-box p { margin-bottom: 0; color: var(--text-dark); font-weight: 600; }
+
+        .alert-box { background: #FFF8E1; border-left: 4px solid #F59E0B; border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 2.4rem 3rem; margin: 3rem 0; display: flex; gap: 1.6rem; align-items: flex-start; }
+        .alert-box i { color: #F59E0B; font-size: 2.2rem; flex-shrink: 0; margin-top: .2rem; }
+        .alert-box p { margin-bottom: 0; }
+
+        .red-box { background: #FEF2F2; border-left: 4px solid #EF4444; border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 2.4rem 3rem; margin: 3rem 0; display: flex; gap: 1.6rem; align-items: flex-start; }
+        .red-box i { color: #EF4444; font-size: 2.2rem; flex-shrink: 0; margin-top: .2rem; }
+        .red-box p { margin-bottom: 0; }
+
+        .check-list { list-style: none; display: flex; flex-direction: column; gap: 1.2rem; margin: 2rem 0 3rem; }
+        .check-list li { display: flex; align-items: flex-start; gap: 1.2rem; font-size: 1.65rem; color: var(--text-mid); line-height: 1.6; }
+        .check-list li::before { content: ''; flex-shrink: 0; width: 2rem; height: 2rem; border-radius: 50%; background: var(--green-primary); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'%3E%3Cpath d='M1 5l3 3 7-7' stroke='white' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 1rem; margin-top: .2rem; }
+
+        .article-img { width: 100%; border-radius: var(--radius-lg); margin: 3.5rem 0; display: block; object-fit: cover; max-height: 40rem; }
+        .article-img-caption { text-align: center; font-size: 1.3rem; color: var(--text-muted); margin-top: -2rem; margin-bottom: 3.5rem; }
+
+        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; margin: 3rem 0; }
+        .info-card { background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 2.4rem; }
+        .info-card-icon { width: 4.4rem; height: 4.4rem; background: var(--green-light); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--green-primary); margin-bottom: 1.2rem; }
+        .info-card h4 { font-family: 'Sora', sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--text-dark); margin-bottom: .6rem; }
+        .info-card p { font-size: 1.4rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0; }
+
+        /* Timeline de marcos */
+        .timeline { position: relative; padding-left: 3.5rem; margin: 3rem 0; }
+        .timeline::before { content: ''; position: absolute; left: 1rem; top: 0; bottom: 0; width: 2px; background: var(--green-tag); }
+        .timeline-item { position: relative; margin-bottom: 2.8rem; }
+        .timeline-item:last-child { margin-bottom: 0; }
+        .timeline-item::before { content: ''; position: absolute; left: -2.7rem; top: .4rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--green-primary); border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--green-primary); }
+        .timeline-age { font-size: 1.2rem; font-weight: 800; color: var(--green-primary); text-transform: uppercase; letter-spacing: .06em; margin-bottom: .4rem; }
+        .timeline-text { font-size: 1.6rem; color: var(--text-mid); line-height: 1.6; }
+        .timeline-text strong { color: var(--text-dark); }
+
+        .article-cta { background: var(--green-primary); border-radius: var(--radius-xl); padding: 5rem; margin-top: 6rem; text-align: center; color: var(--white); }
+        .article-cta h3 { font-family: 'Sora', sans-serif; font-size: 2.8rem; font-weight: 800; margin-bottom: 1.2rem; }
+        .article-cta p { font-size: 1.6rem; opacity: .85; margin-bottom: 3rem; }
+        .article-cta .btn-white { background: var(--white); color: var(--green-primary); font-size: 1.6rem; font-weight: 700; padding: 1.4rem 3.2rem; border-radius: 5rem; border: none; cursor: pointer; transition: all .25s; display: inline-flex; align-items: center; gap: .8rem; }
+        .article-cta .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+
+        .related { margin-top: 7rem; }
+        .related h3 { font-family: 'Sora', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--text-dark); margin-bottom: 2.4rem; }
+        .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        .related-card { display: flex; gap: 1.6rem; align-items: center; background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.8rem; transition: transform .3s, box-shadow .3s; }
+        .related-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+        .related-card img { width: 8rem; height: 8rem; border-radius: var(--radius-sm); object-fit: cover; flex-shrink: 0; }
+        .related-card-text h4 { font-size: 1.5rem; font-weight: 800; color: var(--text-dark); line-height: 1.3; margin-bottom: .4rem; }
+        .related-card-text span { font-size: 1.2rem; color: var(--text-muted); }
+
+        @media (max-width: 768px) {
+            .article-title { font-size: 3.2rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr; }
+            .article-meta-info { margin-left: 0; }
+            .article-cta { padding: 3.5rem 2.4rem; }
+            .article-cta h3 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<header>
+    <div class="logo">
+        <div class="logo-icon">
+            <img src="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg" alt="Logo Crescit" class="navbar-logo-img">
+        </div>
+        <span>Crescit</span>&nbsp;
+    </div>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#sobre">Sobre Nós</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#doutores">Doutores</a></li>
+            <li><a href="blog.html" class="active-nav">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="header-phone">
+        <i class="fas fa-phone-alt"></i>
+        (11) 4002-8922
+    </div>
+    <a href="cadastro.html" class="btn-agendar">criar uma conta</a>
+</header>
+
+<div class="article-hero">
+    <img
+        src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=1400&q=85"
+        alt="Criança em sessão com fonoaudióloga"
+        class="article-hero-img">
+</div>
+
+<main class="article-wrap">
+
+    <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="blog.html">Blog</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Atraso na Fala</span>
+    </nav>
+
+    <span class="article-category"><i class="fas fa-comment-medical"></i> Fala</span>
+
+    <h1 class="article-title">Atraso na fala infantil: o que é parte do ritmo da criança e o que realmente merece avaliação especializada</h1>
+
+    <div class="article-meta">
+        <div class="article-meta-author">
+            <div class="article-meta-av">B</div>
+            <div>
+                <div class="article-meta-av-name">Dra. Beatriz Costa</div>
+                <div class="article-meta-av-role">Nutróloga Infantil · CRN 987654</div>
+            </div>
+        </div>
+        <div class="article-meta-info">
+            <span><i class="fas fa-calendar"></i> 15 de março de 2026</span>
+            <span><i class="fas fa-clock"></i> 7 min de leitura</span>
+            <span><i class="fas fa-eye"></i> 1.580 leituras</span>
+        </div>
+    </div>
+
+    <div class="article-body">
+
+        <p>
+            "Ele vai falar quando estiver pronto." É uma das frases mais repetidas por familiares bem-intencionados quando os pais se preocupam com o desenvolvimento da fala do filho. E em parte é verdade — cada criança tem o seu ritmo. Mas há marcos que, quando não são atingidos, podem indicar algo que precisa de atenção profissional. Saber diferenciar um ritmo próprio de um atraso real pode fazer toda a diferença no desenvolvimento da criança.
+        </p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-info-circle" style="color:var(--green-primary); margin-right:.8rem;"></i>
+            O atraso de linguagem é a queixa de desenvolvimento mais frequente nos consultórios pediátricos. Entre 10% e 15% das crianças apresentam algum grau de atraso na fala ou na linguagem ao longo do desenvolvimento.</p>
+        </div>
+
+        <h2>Fala, linguagem e comunicação: entendendo as diferenças</h2>
+
+        <p>
+            Antes de avaliar se há atraso, é importante entender o que estamos medindo. Fala é a produção dos sons da língua — articulação, fluência e voz. Linguagem é um conceito muito mais amplo: é o sistema de símbolos que usamos para comunicar ideias, e inclui a linguagem compreensiva (entender o que ouvimos) e a linguagem expressiva (expressar pensamentos em palavras).
+        </p>
+        <p>
+            Uma criança pode ter dificuldades na fala (como substituir sons: "tarro" por "carro") mas ter linguagem preservada. Ou pode ter linguagem comprometida, expressando poucas palavras mesmo sem dificuldades articulatórias. Cada situação tem causas e abordagens diferentes.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=900&q=80"
+            alt="Mãe brincando e conversando com bebê"
+            class="article-img">
+        <p class="article-img-caption">A interação diária com cuidadores é o principal motor do desenvolvimento da linguagem infantil.</p>
+
+        <h2>Marcos do desenvolvimento da linguagem</h2>
+        <p>
+            Esses são os marcos esperados para cada faixa etária. Atrasos em dois ou mais itens de uma mesma faixa pedem avaliação:
+        </p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-age">0 – 3 meses</div>
+                <div class="timeline-text">Produz sons de conforto (vogais suaves); reage ao som; se acalma com a voz do cuidador; <strong>chora de formas diferentes</strong> para expressar necessidades distintas.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-age">4 – 6 meses</div>
+                <div class="timeline-text">Balbucia sílabas simples ("ba", "ma", "da"); ri alto; vocaliza para chamar atenção; <strong>imita tons de voz</strong> do adulto.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-age">6 – 12 meses</div>
+                <div class="timeline-text">Repete sequências de sílabas ("bababa", "mamama"); gesticula (aponta, acena tchau); entende "não"; <strong>responde ao próprio nome</strong>.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-age">12 – 18 meses</div>
+                <div class="timeline-text">Usa as primeiras palavras com significado real (além de "mamã" e "papá"); vocabulário de <strong>10 a 20 palavras</strong>; entende comandos simples sem gestos.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-age">18 – 24 meses</div>
+                <div class="timeline-text">Combina duas palavras ("quer água", "cão grande"); <strong>vocabulário de 50+ palavras</strong>; estranhos entendem cerca de 50% do que diz.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-age">2 – 3 anos</div>
+                <div class="timeline-text">Frases de 3 palavras; conta experiências simples; <strong>estranhos entendem 75%</strong> da fala; usa plurais e verbos.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-age">3 – 4 anos</div>
+                <div class="timeline-text">Conta histórias simples; conversa em turnos; <strong>estranhos entendem quase tudo</strong>; usa pronomes corretamente na maioria das vezes.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-age">4 – 5 anos</div>
+                <div class="timeline-text">Linguagem semelhante à do adulto em complexidade; usa frases longas e complexas; <strong>pronuncia corretamente</strong> a maioria dos sons da língua.</div>
+            </div>
+        </div>
+
+        <div class="alert-box">
+            <i class="fas fa-triangle-exclamate"></i>
+            <p><strong>Não espere a criança "amadurecer"</strong> se você perceber ausência de palavras aos 16 meses, ausência de combinação de palavras aos 24 meses, ou regressão na linguagem em qualquer idade. Esses são sinais que pedem avaliação imediata.</p>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=900&q=80"
+            alt="Fonoaudióloga em sessão lúdica com criança pequena"
+            class="article-img">
+        <p class="article-img-caption">A fonoaudiologia pediátrica usa abordagem lúdica — jogos e brincadeiras são as principais ferramentas terapêuticas.</p>
+
+        <h2>Quais são as possíveis causas do atraso na fala?</h2>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-ear-listen"></i></div>
+                <h4>Perda Auditiva</h4>
+                <p>A causa mais comum e mais frequentemente negligenciada. Criança que não ouve bem não aprende a falar bem. Sempre avaliar a audição antes de qualquer diagnóstico de atraso de fala.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-brain"></i></div>
+                <h4>TEA (Autismo)</h4>
+                <p>O atraso na comunicação verbal e não verbal é um dos critérios diagnósticos do Transtorno do Espectro Autista. O diagnóstico precoce permite intervenção muito mais eficaz.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-dna"></i></div>
+                <h4>Causas Genéticas</h4>
+                <p>Síndromes como Down, Angelman e outras condições genéticas cursam frequentemente com atraso de linguagem como parte do quadro clínico global.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-mobile-screen"></i></div>
+                <h4>Privação de Estímulo</h4>
+                <p>O excesso de telas e a falta de interação verbal direta com adultos são fatores de risco crescentes para atraso de linguagem nas sociedades modernas.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-stethoscope"></i></div>
+                <h4>Otite de Repetição</h4>
+                <p>Infecções de ouvido frequentes causam perda auditiva flutuante que prejudica a percepção dos sons da fala durante períodos críticos do desenvolvimento.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-comments"></i></div>
+                <h4>Bilinguismo</h4>
+                <p>Crianças bilíngues podem ter menor vocabulário em cada língua individualmente, mas o vocabulário total é equivalente. O bilinguismo não causa atraso — é uma variação normal.</p>
+            </div>
+        </div>
+
+        <h2>Sinais de alerta que nunca devem ser ignorados</h2>
+        <p>
+            Independentemente da idade, alguns comportamentos pedem avaliação urgente:
+        </p>
+
+        <div class="red-box">
+            <i class="fas fa-circle-exclamation"></i>
+            <div>
+                <p><strong>Regressão na linguagem</strong> — a criança para de usar palavras que usava antes, ou perde habilidades comunicativas — é sempre um sinal de alerta grave e requer avaliação imediata, independentemente da idade. Pode indicar TEA, epilepsia ou outras condições neurológicas.</p>
+            </div>
+        </div>
+
+        <ul class="check-list">
+            <li>Não balbuciar aos 12 meses</li>
+            <li>Não usar palavras com significado aos 16 meses</li>
+            <li>Não combinar 2 palavras aos 24 meses</li>
+            <li>Não fazer contato visual consistente</li>
+            <li>Não responder ao próprio nome em nenhuma faixa etária</li>
+            <li>Regressão em qualquer habilidade de comunicação</li>
+            <li>Dificuldade de ser entendido por estranhos após os 3 anos</li>
+            <li>Gagueira intensa que começa após os 5 anos</li>
+        </ul>
+
+        <h2>Como estimular o desenvolvimento da linguagem em casa?</h2>
+        <p>
+            A terapia fonoaudiológica é fundamental quando necessária, mas o ambiente doméstico é o maior laboratório de linguagem que existe. Veja como potencializar o desenvolvimento do seu filho no dia a dia:
+        </p>
+
+        <h3>Estratégias para bebês (0–12 meses)</h3>
+        <ul class="check-list">
+            <li>Converse com o bebê durante as trocas, banho e refeições — narre tudo que faz</li>
+            <li>Responda sempre às vocalizações, criando um "diálogo" mesmo sem palavras</li>
+            <li>Cante músicas e repita rimas — o ritmo e a melodia estimulam o processamento fonológico</li>
+            <li>Faça contato visual frequente e expresse emoções com o rosto de forma exagerada</li>
+        </ul>
+
+        <h3>Para crianças pequenas (1–3 anos)</h3>
+        <ul class="check-list">
+            <li>Leia livros ilustrados todos os dias — nomeie figuras, faça perguntas, invente histórias juntos</li>
+            <li>Expanda o que a criança diz: se ela fala "água", você responde "sim, você quer água, a água está gelada"</li>
+            <li>Evite antecipar todas as vontades — crie momentos em que ela precise se comunicar para conseguir algo</li>
+            <li>Reduza o tempo de tela para no máximo 1 hora/dia e não use tela como babá silenciosa</li>
+            <li>Brinque de faz-de-conta — o jogo simbólico é um poderoso motor da linguagem</li>
+        </ul>
+
+        <h3>Para crianças maiores (3–6 anos)</h3>
+        <ul class="check-list">
+            <li>Faça perguntas abertas que estimulem respostas elaboradas: "como foi seu dia? o que foi mais legal?"</li>
+            <li>Encoraje a criança a contar histórias e experiências — não corrija, expanda e enriqueça</li>
+            <li>Jogos de palavras, adivinhas e trava-línguas são divertidos e terapêuticos</li>
+            <li>Leia em voz alta com expressividade — a riqueza do vocabulário literário é incomparável</li>
+        </ul>
+
+        <h2>O que esperar da avaliação e do tratamento fonoaudiológico?</h2>
+        <p>
+            A avaliação fonoaudiológica pediátrica é lúdica e acolhedora. O terapeuta observa a criança em situações de brincadeira, conversa com os pais sobre o histórico e aplica ferramentas padronizadas para medir o desenvolvimento da linguagem. A partir daí, um plano terapêutico é traçado individualmente.
+        </p>
+        <p>
+            As sessões geralmente acontecem 1 a 2 vezes por semana, com duração de 30 a 45 minutos, e incluem orientação ativa para os pais — que são os principais agentes terapêuticos no cotidiano da criança. Os resultados, quando o tratamento começa cedo, costumam ser muito positivos.
+        </p>
+
+        <div class="article-cta">
+            <h3>Tem dúvidas sobre o desenvolvimento da fala do seu filho?</h3>
+            <p>Nossa equipe de fonoaudiólogos e pediatras pode avaliar sua criança com carinho e profissionalismo. Marque uma consulta e dê a ela a melhor chance de se desenvolver plenamente.</p>
+            <a href="index.html#contato" class="btn-white">
+                <i class="fas fa-calendar-plus"></i> Agendar avaliação fonoaudiológica
+            </a>
+        </div>
+
+        <div class="related">
+            <h3>Leia também</h3>
+            <div class="related-grid">
+                <a href="blog-surdez.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1576765608622-067973a79f53?w=200&q=70" alt="Surdez infantil">
+                    <div class="related-card-text">
+                        <h4>Surdez Infantil: primeiros sinais e como agir</h4>
+                        <span>6 min de leitura</span>
+                    </div>
+                </a>
+                <a href="blog-visao.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=200&q=70" alt="Visão infantil">
+                    <div class="related-card-text">
+                        <h4>Visão na infância: quando o olhar pede atenção</h4>
+                        <span>5 min de leitura</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <div class="logo-icon-f"><i class="fas fa-plus"></i></div>
+                <span>Crescit</span>
+            </div>
+            <p>Cuidando da saúde do seu filho com carinho e responsabilidade. Referência em atendimento pediátrico humanizado em São Paulo.</p>
+            <div class="social-links">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/5511999999999" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#doutores">Doutores</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Artigos do Blog</h3>
+            <ul>
+                <li><a href="blog-surdez.html">Surdez Infantil</a></li>
+                <li><a href="blog-visao.html">Visão na Infância</a></li>
+                <li><a href="blog-fala.html">Atraso na Fala</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contato@crescit.com">contato@crescit.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 – São Paulo, SP</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Crescit. Todos os direitos reservados.</p>
+        <a href="#">Política de Privacidade</a>
+    </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('scroll-progress').style.width = (scrolled / maxScroll * 100) + '%';
+    document.querySelector('header').style.boxShadow = window.scrollY > 20
+        ? '0 2px 20px rgba(0,0,0,.1)' : '0 1px 0 #E0EAE4';
+});
+const hamburger = document.getElementById('hamburger');
+const navbar = document.querySelector('.navbar');
+if (hamburger && navbar) {
+    hamburger.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('active');
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        document.body.classList.toggle('menu-open', isOpen);
+    });
+}
+</script>
+</body>
+</html>

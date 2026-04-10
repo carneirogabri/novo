@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão na Infância: quando o olhar pede atenção – Crescit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/jpeg" href="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+
+    <style>
+        .article-hero { padding-top: 8rem; background: var(--white); }
+        .article-hero-img { width: 100%; height: 48rem; object-fit: cover; display: block; }
+
+        .article-wrap { max-width: 82rem; margin: 0 auto; padding: 6rem 2rem 10rem; }
+
+        .breadcrumb { display: flex; align-items: center; gap: .8rem; font-size: 1.3rem; color: var(--text-muted); margin-bottom: 3rem; flex-wrap: wrap; }
+        .breadcrumb a { color: var(--green-primary); font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb i { font-size: 1rem; }
+
+        .article-category { display: inline-flex; align-items: center; gap: .6rem; background: var(--green-light); border: 1px solid var(--green-tag); color: var(--green-primary); font-size: 1.25rem; font-weight: 700; padding: .5rem 1.4rem; border-radius: 5rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2rem; }
+
+        .article-title { font-family: 'Sora', sans-serif; font-size: 4.4rem; font-weight: 800; color: var(--text-dark); line-height: 1.18; margin-bottom: 2rem; }
+
+        .article-meta { display: flex; align-items: center; gap: 2.4rem; flex-wrap: wrap; padding: 2rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 4rem; }
+        .article-meta-author { display: flex; align-items: center; gap: 1.2rem; }
+        .article-meta-av { width: 4.4rem; height: 4.4rem; border-radius: 50%; background: #D4EDE0; color: #2E6040; font-weight: 800; font-size: 1.6rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .article-meta-av-name { font-size: 1.4rem; font-weight: 800; color: var(--text-dark); }
+        .article-meta-av-role { font-size: 1.2rem; color: var(--text-muted); }
+        .article-meta-info { display: flex; gap: 2rem; flex-wrap: wrap; margin-left: auto; }
+        .article-meta-info span { font-size: 1.3rem; color: var(--text-muted); display: flex; align-items: center; gap: .5rem; font-weight: 600; }
+        .article-meta-info span i { color: var(--green-primary); }
+
+        .article-body { font-size: 1.7rem; color: var(--text-mid); line-height: 1.8; }
+        .article-body p { margin-bottom: 2.4rem; }
+        .article-body h2 { font-family: 'Sora', sans-serif; font-size: 2.6rem; font-weight: 800; color: var(--text-dark); margin: 4rem 0 1.6rem; line-height: 1.25; }
+        .article-body h3 { font-family: 'Sora', sans-serif; font-size: 2rem; font-weight: 700; color: var(--text-dark); margin: 3rem 0 1.2rem; }
+
+        .highlight-box { background: var(--green-light); border-left: 4px solid var(--green-primary); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 2.4rem 3rem; margin: 3rem 0; }
+        .highlight-box p { margin-bottom: 0; color: var(--text-dark); font-weight: 600; }
+
+        .alert-box { background: #FFF8E1; border-left: 4px solid #F59E0B; border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 2.4rem 3rem; margin: 3rem 0; display: flex; gap: 1.6rem; align-items: flex-start; }
+        .alert-box i { color: #F59E0B; font-size: 2.2rem; flex-shrink: 0; margin-top: .2rem; }
+        .alert-box p { margin-bottom: 0; }
+
+        .check-list { list-style: none; display: flex; flex-direction: column; gap: 1.2rem; margin: 2rem 0 3rem; }
+        .check-list li { display: flex; align-items: flex-start; gap: 1.2rem; font-size: 1.65rem; color: var(--text-mid); line-height: 1.6; }
+        .check-list li::before { content: ''; flex-shrink: 0; width: 2rem; height: 2rem; border-radius: 50%; background: var(--green-primary); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'%3E%3Cpath d='M1 5l3 3 7-7' stroke='white' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; background-size: 1rem; margin-top: .2rem; }
+
+        .article-img { width: 100%; border-radius: var(--radius-lg); margin: 3.5rem 0; display: block; object-fit: cover; max-height: 40rem; }
+        .article-img-caption { text-align: center; font-size: 1.3rem; color: var(--text-muted); margin-top: -2rem; margin-bottom: 3.5rem; }
+
+        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; margin: 3rem 0; }
+        .info-card { background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 2.4rem; }
+        .info-card-icon { width: 4.4rem; height: 4.4rem; background: var(--green-light); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--green-primary); margin-bottom: 1.2rem; }
+        .info-card h4 { font-family: 'Sora', sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--text-dark); margin-bottom: .6rem; }
+        .info-card p { font-size: 1.4rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0; }
+
+        /* Tabela de acuidade visual */
+        .vision-table { width: 100%; border-collapse: collapse; margin: 2.5rem 0; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); font-size: 1.5rem; }
+        .vision-table thead { background: var(--green-primary); color: var(--white); }
+        .vision-table th { padding: 1.4rem 2rem; text-align: left; font-weight: 700; font-family: 'Sora', sans-serif; }
+        .vision-table td { padding: 1.4rem 2rem; border-bottom: 1px solid var(--border); color: var(--text-mid); }
+        .vision-table tbody tr:last-child td { border-bottom: none; }
+        .vision-table tbody tr:nth-child(even) { background: var(--bg-light); }
+
+        .article-cta { background: var(--green-primary); border-radius: var(--radius-xl); padding: 5rem; margin-top: 6rem; text-align: center; color: var(--white); }
+        .article-cta h3 { font-family: 'Sora', sans-serif; font-size: 2.8rem; font-weight: 800; margin-bottom: 1.2rem; }
+        .article-cta p { font-size: 1.6rem; opacity: .85; margin-bottom: 3rem; }
+        .article-cta .btn-white { background: var(--white); color: var(--green-primary); font-size: 1.6rem; font-weight: 700; padding: 1.4rem 3.2rem; border-radius: 5rem; border: none; cursor: pointer; transition: all .25s; display: inline-flex; align-items: center; gap: .8rem; }
+        .article-cta .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+
+        .related { margin-top: 7rem; }
+        .related h3 { font-family: 'Sora', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--text-dark); margin-bottom: 2.4rem; }
+        .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        .related-card { display: flex; gap: 1.6rem; align-items: center; background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.8rem; transition: transform .3s, box-shadow .3s; }
+        .related-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+        .related-card img { width: 8rem; height: 8rem; border-radius: var(--radius-sm); object-fit: cover; flex-shrink: 0; }
+        .related-card-text h4 { font-size: 1.5rem; font-weight: 800; color: var(--text-dark); line-height: 1.3; margin-bottom: .4rem; }
+        .related-card-text span { font-size: 1.2rem; color: var(--text-muted); }
+
+        @media (max-width: 768px) {
+            .article-title { font-size: 3.2rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr; }
+            .article-meta-info { margin-left: 0; }
+            .article-cta { padding: 3.5rem 2.4rem; }
+            .article-cta h3 { font-size: 2.2rem; }
+            .vision-table { font-size: 1.3rem; }
+            .vision-table th, .vision-table td { padding: 1rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<header>
+    <div class="logo">
+        <div class="logo-icon">
+            <img src="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg" alt="Logo Crescit" class="navbar-logo-img">
+        </div>
+        <span>Crescit</span>&nbsp;
+    </div>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#sobre">Sobre Nós</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#doutores">Doutores</a></li>
+            <li><a href="blog.html" class="active-nav">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="header-phone">
+        <i class="fas fa-phone-alt"></i>
+        (11) 4002-8922
+    </div>
+    <a href="cadastro.html" class="btn-agendar">criar uma conta</a>
+</header>
+
+<div class="article-hero">
+    <img
+        src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=1400&q=85"
+        alt="Criança realizando exame de visão"
+        class="article-hero-img">
+</div>
+
+<main class="article-wrap">
+
+    <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="blog.html">Blog</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Visão na Infância</span>
+    </nav>
+
+    <span class="article-category"><i class="fas fa-eye"></i> Visão</span>
+
+    <h1 class="article-title">Visão na infância: quando o olhar pede atenção e como proteger a saúde ocular do seu filho</h1>
+
+    <div class="article-meta">
+        <div class="article-meta-author">
+            <div class="article-meta-av">R</div>
+            <div>
+                <div class="article-meta-av-name">Dr. Ricardo Alves</div>
+                <div class="article-meta-av-role">Pediatria · CRM/SP 112233</div>
+            </div>
+        </div>
+        <div class="article-meta-info">
+            <span><i class="fas fa-calendar"></i> 28 de março de 2026</span>
+            <span><i class="fas fa-clock"></i> 5 min de leitura</span>
+            <span><i class="fas fa-eye"></i> 987 leituras</span>
+        </div>
+    </div>
+
+    <div class="article-body">
+
+        <p>
+            Enxergar bem é muito mais do que ter acuidade visual. A visão é o principal canal pelo qual as crianças exploram o mundo, aprendem a ler, desenvolvem coordenação motora e se relacionam socialmente. Quando um problema visual não é detectado no tempo certo, as consequências vão muito além das letras embaçadas — elas afetam o desenvolvimento global da criança de forma silenciosa e progressiva.
+        </p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-info-circle" style="color:var(--green-primary); margin-right:.8rem;"></i>
+            Cerca de 20% das crianças em idade escolar têm algum problema visual que interfere no aprendizado. A grande maioria nunca se queixa, porque nunca soube que enxergar de outra forma era possível.</p>
+        </div>
+
+        <h2>Como a visão se desenvolve na infância?</h2>
+
+        <p>
+            O sistema visual humano não nasce pronto. Ao contrário — ele se desenvolve de forma gradual ao longo dos primeiros anos de vida, dependendo de estimulação visual adequada para amadurecer. Esse processo é chamado de neuroplasticidade visual e tem uma janela crítica que vai até aproximadamente os 7 a 9 anos de idade.
+        </p>
+        <p>
+            Se durante esse período um olho não consegue focar imagens nítidas — por qualquer motivo: miopia, astigmatismo, estrabismo, catarata —, o cérebro começa a "ignorar" as informações daquele olho, criando o que chamamos de ambliopia (olho preguiçoso). Após a janela crítica, essa condição se torna muito mais difícil de reverter.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=900&q=80"
+            alt="Oftalmologista examinando olhos de criança pequena"
+            class="article-img">
+        <p class="article-img-caption">O exame oftalmológico pediátrico deve começar nos primeiros meses de vida, ainda na maternidade.</p>
+
+        <h2>Desenvolvimento visual esperado por faixa etária</h2>
+
+        <table class="vision-table">
+            <thead>
+                <tr>
+                    <th>Idade</th>
+                    <th>Marco visual esperado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0 – 1 mês</td><td>Fixa o olhar em rostos e na luz; segue objetos em movimento lento</td></tr>
+                <tr><td>2 – 3 meses</td><td>Acompanha objetos a 90°; começa a perceber cores primárias</td></tr>
+                <tr><td>4 – 6 meses</td><td>Coordena os dois olhos; tenta alcançar objetos; visão estereoscópica emerge</td></tr>
+                <tr><td>6 – 12 meses</td><td>Reconhece rostos familiares à distância; percebe detalhes pequenos</td></tr>
+                <tr><td>1 – 3 anos</td><td>Visão de cores completamente desenvolvida; coordenação olho-mão apurada</td></tr>
+                <tr><td>3 – 5 anos</td><td>Acuidade visual semelhante à do adulto; pode realizar teste de letras/figuras</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Sinais de alerta que não devem ser ignorados</h2>
+        <p>
+            Crianças raramente se queixam de "ver mal", porque simplesmente não sabem que deveriam enxergar melhor. Por isso, o papel dos pais e educadores na observação é fundamental. Fique atento a:
+        </p>
+
+        <h3>Em bebês e crianças pequenas</h3>
+        <ul class="check-list">
+            <li>Não segue objetos com o olhar após os 2 meses</li>
+            <li>Um ou ambos os olhos ficam virados para dentro ou para fora (estrabismo)</li>
+            <li>O reflexo do olho em fotos aparece branco ou amarelado ao invés de vermelho (leucocoria)</li>
+            <li>Pestaneja excessivamente ou franze muito os olhos</li>
+            <li>Inclina ou vira a cabeça para um lado para focar objetos</li>
+            <li>Olhos que se movem de forma involuntária e rápida (nistagmo)</li>
+        </ul>
+
+        <h3>Em crianças em idade escolar</h3>
+        <ul class="check-list">
+            <li>Aproxima muito o rosto do livro, caderno ou tela</li>
+            <li>Queixa de dor de cabeça ou cansaço nos olhos ao ler</li>
+            <li>Dificuldade para copiar do quadro ou ver longe</li>
+            <li>Perde o lugar ao ler; pula linhas ou letras com frequência</li>
+            <li>Desempenho escolar abaixo do esperado sem outra explicação aparente</li>
+            <li>Fecha ou cobre um olho para enxergar melhor</li>
+        </ul>
+
+        <div class="alert-box">
+            <i class="fas fa-triangle-exclamate"></i>
+            <p><strong>Leucocoria (reflexo branco no olho)</strong> é um sinal de emergência. Pode indicar catarata congênita ou retinoblastoma (tumor ocular). Se você observar esse sinal em fotos com flash, procure um oftalmologista imediatamente — no mesmo dia, se possível.</p>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1583946099379-f9c9cb8bc030?w=900&q=80"
+            alt="Criança usando óculos e lendo um livro feliz"
+            class="article-img">
+        <p class="article-img-caption">O uso correto de óculos desde cedo previne a ambliopia e garante desenvolvimento visual pleno.</p>
+
+        <h2>Principais problemas de visão em crianças</h2>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-compress-alt"></i></div>
+                <h4>Miopia</h4>
+                <p>Dificuldade de enxergar longe. Muito prevalente em crianças em idade escolar. Aumenta progressivamente e precisa de acompanhamento semestral.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-expand-alt"></i></div>
+                <h4>Hipermetropia</h4>
+                <p>Dificuldade de focar de perto. Causa cansaço visual e dor de cabeça. Frequentemente confundida com falta de atenção ou dislexia.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-circle-notch"></i></div>
+                <h4>Astigmatismo</h4>
+                <p>Distorção da córnea que borra a visão em todas as distâncias. Muito comum e facilmente corrigível com óculos desde a infância.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-arrows-left-right"></i></div>
+                <h4>Estrabismo</h4>
+                <p>Olhos desalinhados que podem levar à ambliopia. O tratamento pode incluir óculos, tampão (oclusão) e cirurgia.</p>
+            </div>
+        </div>
+
+        <h2>Quando e com que frequência fazer o exame oftalmológico?</h2>
+        <p>
+            A recomendação oficial da Sociedade Brasileira de Oftalmologia Pediátrica é:
+        </p>
+        <ul class="check-list">
+            <li><strong>Recém-nascido:</strong> triagem do reflexo vermelho (teste do olhinho) ainda na maternidade — obrigatório por lei no Brasil</li>
+            <li><strong>6 meses:</strong> primeira consulta com oftalmologista pediátrico para avaliação do desenvolvimento visual</li>
+            <li><strong>2 a 3 anos:</strong> avaliação completa, mesmo sem sinais de alerta</li>
+            <li><strong>Antes da entrada na escola (4–5 anos):</strong> exame com dilatação das pupilas para verificar a refração real</li>
+            <li><strong>Anualmente a partir dos 6 anos:</strong> especialmente durante o período escolar, quando a miopia tende a progredir</li>
+        </ul>
+
+        <h2>Como proteger a visão do seu filho em casa?</h2>
+        <ul class="check-list">
+            <li>Garanta boa iluminação nos ambientes de leitura e estudo — a luz deve vir de cima e de lado, nunca de frente</li>
+            <li>Incentive pelo menos 2 horas de atividade ao ar livre por dia — a luz solar natural ajuda a prevenir a progressão da miopia</li>
+            <li>Estabeleça a regra 20-20-20: a cada 20 minutos de tela, olhar para algo a 20 pés (6 metros) de distância por 20 segundos</li>
+            <li>Mantenha telas a pelo menos 40 cm dos olhos e evite uso no escuro</li>
+            <li>Limite o tempo de tela de acordo com a faixa etária (sem telas antes de 18–24 meses; máximo 1h/dia para 2–5 anos)</li>
+            <li>Nunca pule o exame do olhinho na maternidade e mantenha o calendário de consultas oftalmológicas em dia</li>
+        </ul>
+
+        <div class="article-cta">
+            <h3>A visão do seu filho está em dia?</h3>
+            <p>Nossa clínica conta com oftalmologistas pediátricos experientes para uma avaliação completa e acolhedora. Não espere por sinais — a prevenção é o melhor tratamento.</p>
+            <a href="index.html#contato" class="btn-white">
+                <i class="fas fa-calendar-plus"></i> Agendar avaliação oftalmológica
+            </a>
+        </div>
+
+        <div class="related">
+            <h3>Leia também</h3>
+            <div class="related-grid">
+                <a href="blog-surdez.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1576765608622-067973a79f53?w=200&q=70" alt="Surdez infantil">
+                    <div class="related-card-text">
+                        <h4>Surdez Infantil: primeiros sinais e como agir</h4>
+                        <span>6 min de leitura</span>
+                    </div>
+                </a>
+                <a href="blog-fala.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=200&q=70" alt="Fala infantil">
+                    <div class="related-card-text">
+                        <h4>Atraso na fala: o que é normal e o que merece avaliação</h4>
+                        <span>7 min de leitura</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <div class="logo-icon-f"><i class="fas fa-plus"></i></div>
+                <span>Crescit</span>
+            </div>
+            <p>Cuidando da saúde do seu filho com carinho e responsabilidade. Referência em atendimento pediátrico humanizado em São Paulo.</p>
+            <div class="social-links">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/5511999999999" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#doutores">Doutores</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Artigos do Blog</h3>
+            <ul>
+                <li><a href="blog-surdez.html">Surdez Infantil</a></li>
+                <li><a href="blog-visao.html">Visão na Infância</a></li>
+                <li><a href="blog-fala.html">Atraso na Fala</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contato@crescit.com">contato@crescit.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 – São Paulo, SP</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Crescit. Todos os direitos reservados.</p>
+        <a href="#">Política de Privacidade</a>
+    </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('scroll-progress').style.width = (scrolled / maxScroll * 100) + '%';
+    document.querySelector('header').style.boxShadow = window.scrollY > 20
+        ? '0 2px 20px rgba(0,0,0,.1)' : '0 1px 0 #E0EAE4';
+});
+const hamburger = document.getElementById('hamburger');
+const navbar = document.querySelector('.navbar');
+if (hamburger && navbar) {
+    hamburger.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('active');
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        document.body.classList.toggle('menu-open', isOpen);
+    });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surdez Infantil: primeiros sinais e como agir – Crescit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/jpeg" href="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+
+    <style>
+        /* ── ARTICLE LAYOUT ──────────────────────────── */
+        .article-hero {
+            padding-top: 8rem;
+            background: var(--white);
+        }
+        .article-hero-img {
+            width: 100%;
+            height: 48rem;
+            object-fit: cover;
+            display: block;
+        }
+
+        .article-wrap {
+            max-width: 82rem;
+            margin: 0 auto;
+            padding: 6rem 2rem 10rem;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .breadcrumb a { color: var(--green-primary); font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb i { font-size: 1rem; }
+
+        /* Category badge */
+        .article-category {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            background: var(--green-light);
+            border: 1px solid var(--green-tag);
+            color: var(--green-primary);
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: .5rem 1.4rem;
+            border-radius: 5rem;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            margin-bottom: 2rem;
+        }
+
+        /* Title */
+        .article-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 4.4rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.18;
+            margin-bottom: 2rem;
+        }
+
+        /* Meta */
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 2.4rem;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 4rem;
+        }
+        .article-meta-author {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        .article-meta-av {
+            width: 4.4rem; height: 4.4rem;
+            border-radius: 50%;
+            background: var(--green-tag);
+            color: var(--green-primary);
+            font-weight: 800;
+            font-size: 1.6rem;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .article-meta-av-name { font-size: 1.4rem; font-weight: 800; color: var(--text-dark); }
+        .article-meta-av-role { font-size: 1.2rem; color: var(--text-muted); }
+        .article-meta-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-left: auto;
+        }
+        .article-meta-info span {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            display: flex; align-items: center; gap: .5rem;
+            font-weight: 600;
+        }
+        .article-meta-info span i { color: var(--green-primary); }
+
+        /* Body content */
+        .article-body { font-size: 1.7rem; color: var(--text-mid); line-height: 1.8; }
+        .article-body p { margin-bottom: 2.4rem; }
+
+        .article-body h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin: 4rem 0 1.6rem;
+            line-height: 1.25;
+        }
+        .article-body h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 3rem 0 1.2rem;
+        }
+
+        /* Highlight box */
+        .highlight-box {
+            background: var(--green-light);
+            border-left: 4px solid var(--green-primary);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            padding: 2.4rem 3rem;
+            margin: 3rem 0;
+        }
+        .highlight-box p { margin-bottom: 0; color: var(--text-dark); font-weight: 600; }
+
+        /* Alert box */
+        .alert-box {
+            background: #FFF8E1;
+            border-left: 4px solid #F59E0B;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            padding: 2.4rem 3rem;
+            margin: 3rem 0;
+            display: flex;
+            gap: 1.6rem;
+            align-items: flex-start;
+        }
+        .alert-box i { color: #F59E0B; font-size: 2.2rem; flex-shrink: 0; margin-top: .2rem; }
+        .alert-box p { margin-bottom: 0; }
+
+        /* Checklist */
+        .check-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 2rem 0 3rem;
+        }
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            font-size: 1.65rem;
+            color: var(--text-mid);
+            line-height: 1.6;
+        }
+        .check-list li::before {
+            content: '';
+            flex-shrink: 0;
+            width: 2rem; height: 2rem;
+            border-radius: 50%;
+            background: var(--green-primary);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'%3E%3Cpath d='M1 5l3 3 7-7' stroke='white' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1rem;
+            margin-top: .2rem;
+        }
+
+        /* Inline image */
+        .article-img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            margin: 3.5rem 0;
+            display: block;
+            object-fit: cover;
+            max-height: 40rem;
+        }
+        .article-img-caption {
+            text-align: center;
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-top: -2rem;
+            margin-bottom: 3.5rem;
+        }
+
+        /* Info card grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.6rem;
+            margin: 3rem 0;
+        }
+        .info-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 2.4rem;
+        }
+        .info-card-icon {
+            width: 4.4rem; height: 4.4rem;
+            background: var(--green-light);
+            border-radius: var(--radius-sm);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2rem;
+            color: var(--green-primary);
+            margin-bottom: 1.2rem;
+        }
+        .info-card h4 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: .6rem;
+        }
+        .info-card p {
+            font-size: 1.4rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* CTA ao final */
+        .article-cta {
+            background: var(--green-primary);
+            border-radius: var(--radius-xl);
+            padding: 5rem;
+            margin-top: 6rem;
+            text-align: center;
+            color: var(--white);
+        }
+        .article-cta h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+        }
+        .article-cta p { font-size: 1.6rem; opacity: .85; margin-bottom: 3rem; }
+        .article-cta .btn-white {
+            background: var(--white);
+            color: var(--green-primary);
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding: 1.4rem 3.2rem;
+            border-radius: 5rem;
+            border: none;
+            cursor: pointer;
+            transition: all .25s;
+            display: inline-flex; align-items: center; gap: .8rem;
+        }
+        .article-cta .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+
+        /* Related articles */
+        .related {
+            margin-top: 7rem;
+        }
+        .related h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 2.4rem;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        .related-card {
+            display: flex;
+            gap: 1.6rem;
+            align-items: center;
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 1.8rem;
+            transition: transform .3s, box-shadow .3s;
+        }
+        .related-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+        .related-card img {
+            width: 8rem; height: 8rem;
+            border-radius: var(--radius-sm);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .related-card-text h4 {
+            font-size: 1.5rem; font-weight: 800; color: var(--text-dark); line-height: 1.3; margin-bottom: .4rem;
+        }
+        .related-card-text span { font-size: 1.2rem; color: var(--text-muted); }
+
+        @media (max-width: 768px) {
+            .article-title { font-size: 3.2rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr; }
+            .article-meta-info { margin-left: 0; }
+            .article-cta { padding: 3.5rem 2.4rem; }
+            .article-cta h3 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- HEADER (igual ao index.html) -->
+<header>
+    <div class="logo">
+        <div class="logo-icon">
+            <img src="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg" alt="Logo Crescit" class="navbar-logo-img">
+        </div>
+        <span>Crescit</span>&nbsp;
+    </div>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#sobre">Sobre Nós</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#doutores">Doutores</a></li>
+            <li><a href="blog.html" class="active-nav">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="header-phone">
+        <i class="fas fa-phone-alt"></i>
+        (11) 4002-8922
+    </div>
+    <a href="cadastro.html" class="btn-agendar">criar uma conta</a>
+</header>
+
+<!-- HERO IMAGE -->
+<div class="article-hero">
+    <img
+        src="https://images.unsplash.com/photo-1576765608622-067973a79f53?w=1400&q=85"
+        alt="Profissional realizando avaliação auditiva em criança"
+        class="article-hero-img">
+</div>
+
+<!-- ARTICLE CONTENT -->
+<main class="article-wrap">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="blog.html">Blog</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Surdez Infantil</span>
+    </nav>
+
+    <!-- Category -->
+    <span class="article-category"><i class="fas fa-ear-listen"></i> Audição</span>
+
+    <!-- Title -->
+    <h1 class="article-title">Surdez Infantil: primeiros sinais e como agir cedo para proteger o desenvolvimento do seu filho</h1>
+
+    <!-- Meta -->
+    <div class="article-meta">
+        <div class="article-meta-author">
+            <div class="article-meta-av">A</div>
+            <div>
+                <div class="article-meta-av-name">Dra. Ana Silva</div>
+                <div class="article-meta-av-role">Pediatria Geral · CRM/SP 123456</div>
+            </div>
+        </div>
+        <div class="article-meta-info">
+            <span><i class="fas fa-calendar"></i> 2 de abril de 2026</span>
+            <span><i class="fas fa-clock"></i> 6 min de leitura</span>
+            <span><i class="fas fa-eye"></i> 1.240 leituras</span>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="article-body">
+
+        <p>
+            A audição é um dos sentidos mais essenciais para o desenvolvimento da linguagem, da fala e da aprendizagem. Quando uma criança tem perda auditiva, cada mês sem diagnóstico representa oportunidades perdidas de estimulação — janelas neurológicas que se fecham com o tempo. Por isso, a identificação precoce da surdez infantil é considerada uma das grandes prioridades da saúde pediátrica moderna.
+        </p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-info-circle" style="color:var(--green-primary); margin-right:.8rem;"></i>
+            No Brasil, estima-se que 1 a 2 a cada 1.000 recém-nascidos apresentam perda auditiva significativa. Com a triagem neonatal obrigatória — o Teste da Orelhinha —, é possível detectar esses casos já nas primeiras horas de vida.</p>
+        </div>
+
+        <h2>O que é a surdez infantil?</h2>
+
+        <p>
+            A surdez ou perda auditiva pode ser definida como a redução parcial (hipoacusia) ou total (surdez) da capacidade de ouvir. Ela pode afetar um ouvido (unilateral) ou ambos (bilateral) e ser classificada de acordo com o grau: leve, moderada, severa ou profunda.
+        </p>
+        <p>
+            As causas são variadas: podem ser genéticas, adquiridas durante a gravidez (rubéola, citomegalovírus, toxoplasmose), no parto (prematuridade, falta de oxigênio) ou após o nascimento (meningite, otite de repetição, exposição a ruídos intensos ou medicamentos ototóxicos).
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=900&q=80"
+            alt="Médica examinando bebê com otoscópio"
+            class="article-img">
+        <p class="article-img-caption">Exame otoscópico faz parte da rotina pediátrica de acompanhamento auditivo.</p>
+
+        <h2>Sinais de alerta por faixa etária</h2>
+        <p>
+            Cada fase do desenvolvimento tem marcos auditivos e comunicativos esperados. Conheça os principais sinais de alerta que pedem avaliação imediata:
+        </p>
+
+        <h3>Do nascimento aos 3 meses</h3>
+        <ul class="check-list">
+            <li>Não acorda ou não reage a sons altos e repentinos</li>
+            <li>Não se acalma com a voz da mãe ou do cuidador</li>
+            <li>Não produz sons como grunhidos ou pequenos balbucios</li>
+        </ul>
+
+        <h3>De 3 a 6 meses</h3>
+        <ul class="check-list">
+            <li>Não busca a fonte do som com os olhos ou a cabeça</li>
+            <li>Não ri ou reage a sons do ambiente</li>
+            <li>Não demonstra interesse pela voz humana</li>
+        </ul>
+
+        <h3>De 6 a 12 meses</h3>
+        <ul class="check-list">
+            <li>Não balbuceia sílabas como "ba", "ma", "pa"</li>
+            <li>Não responde ao próprio nome quando chamado</li>
+            <li>Não imita sons ou tom de voz do adulto</li>
+        </ul>
+
+        <h3>De 1 a 2 anos</h3>
+        <ul class="check-list">
+            <li>Vocabulário menor que 10 palavras aos 18 meses</li>
+            <li>Não aponta para objetos ou figuras quando solicitado</li>
+            <li>Precisa de volume muito alto na televisão para prestar atenção</li>
+            <li>Não obedece a comandos simples sem ver o rosto da pessoa</li>
+        </ul>
+
+        <div class="alert-box">
+            <i class="fas fa-triangle-exclamate"></i>
+            <p><strong>Atenção:</strong> Crianças com perda auditiva unilateral frequentemente passam despercebidas, pois compensam com o ouvido bom. Mesmo assim, podem ter dificuldades na escola, especialmente em ambientes ruidosos. Sempre realize a triagem auditiva nos dois ouvidos.</p>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=80"
+            alt="Fonoaudióloga trabalhando com criança pequena"
+            class="article-img">
+        <p class="article-img-caption">A intervenção fonoaudiológica precoce é fundamental para o desenvolvimento da linguagem.</p>
+
+        <h2>Por que o diagnóstico precoce é tão importante?</h2>
+        <p>
+            O cérebro humano tem uma plasticidade extraordinária nos primeiros anos de vida. Para que as áreas responsáveis pela linguagem se desenvolvam corretamente, elas precisam ser estimuladas por sons de forma contínua. Quando a privação auditiva acontece, essas regiões começam a ser recrutadas por outras funções sensoriais, tornando a reabilitação mais difícil com o passar do tempo.
+        </p>
+        <p>
+            Estudos mostram que crianças diagnosticadas e tratadas antes dos 6 meses de vida têm desempenho de linguagem comparável ao de crianças com audição normal. Já aquelas diagnosticadas após os 2 anos apresentam déficits significativos, mesmo com uso de aparelho auditivo ou implante coclear.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-baby"></i></div>
+                <h4>Teste da Orelhinha</h4>
+                <p>Obrigatório por lei no Brasil, deve ser realizado ainda na maternidade, nas primeiras 48 horas de vida. É indolor e rápido.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-headphones"></i></div>
+                <h4>Aparelho Auditivo</h4>
+                <p>Indicado para perdas de grau leve a severo, pode ser prescrito a partir de 1 mês de vida com suporte do SUS.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-microchip"></i></div>
+                <h4>Implante Coclear</h4>
+                <p>Para perdas severas a profundas, o implante coclear é coberto pelo SUS e tem melhores resultados quando realizado antes dos 2 anos.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-hands-asl-interpreting"></i></div>
+                <h4>Língua de Sinais (LIBRAS)</h4>
+                <p>Independentemente do dispositivo utilizado, aprender LIBRAS enriquece o desenvolvimento e a identidade da criança surda.</p>
+            </div>
+        </div>
+
+        <h2>O que fazer se suspeitar de perda auditiva?</h2>
+        <p>
+            A primeira coisa é não esperar. Muitos pais hesitam, achando que a criança "vai melhorar sozinha" ou que "é só displicência". Mas cada semana importa. Siga estes passos:
+        </p>
+        <ul class="check-list">
+            <li>Converse com o pediatra na próxima consulta e relate todos os sinais observados com detalhes</li>
+            <li>Solicite encaminhamento para um fonoaudiólogo ou otorrinolaringologista pediátrico</li>
+            <li>Realize o exame de audiometria infantil (BERA ou PEATE), disponível em clínicas especializadas e pelo SUS</li>
+            <li>Inicie o acompanhamento fonoaudiológico o quanto antes, mesmo antes de fechar o diagnóstico</li>
+            <li>Busque grupos de apoio para famílias de crianças com deficiência auditiva — o suporte social faz enorme diferença</li>
+        </ul>
+
+        <h2>Como estimular a audição em casa?</h2>
+        <p>
+            Mesmo durante o período de investigação, há muito que os pais podem fazer no dia a dia para estimular o desenvolvimento comunicativo do filho:
+        </p>
+        <ul class="check-list">
+            <li>Fale diretamente para o rosto da criança, com boa iluminação e sem barulho ao fundo</li>
+            <li>Use músicas, histórias e cantigas com regularidade — ritmo e melodia são poderosos estimuladores neurais</li>
+            <li>Nomeie tudo ao redor: objetos, ações, sentimentos. O vocabulário passivo se forma antes do ativo</li>
+            <li>Reduza o uso de televisão como fundo sonoro — o som constante e sem contexto confunde o processamento auditivo</li>
+            <li>Celebre cada vocalização e cada tentativa de comunicação — o reforço positivo acelera o aprendizado</li>
+        </ul>
+
+        <!-- CTA -->
+        <div class="article-cta">
+            <h3>Ficou com alguma dúvida sobre a audição do seu filho?</h3>
+            <p>Nossa equipe de pediatras e fonoaudiólogos está pronta para avaliar e orientar você. Agende uma consulta e cuide da saúde auditiva do seu filho com quem entende.</p>
+            <a href="index.html#contato" class="btn-white">
+                <i class="fas fa-calendar-plus"></i> Agendar avaliação auditiva
+            </a>
+        </div>
+
+        <!-- Related -->
+        <div class="related">
+            <h3>Leia também</h3>
+            <div class="related-grid">
+                <a href="blog-visao.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=200&q=70" alt="Visão infantil">
+                    <div class="related-card-text">
+                        <h4>Visão na infância: quando o olhar pede atenção</h4>
+                        <span>5 min de leitura</span>
+                    </div>
+                </a>
+                <a href="blog-fala.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=200&q=70" alt="Fala infantil">
+                    <div class="related-card-text">
+                        <h4>Atraso na fala: o que é normal e o que merece avaliação</h4>
+                        <span>7 min de leitura</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div><!-- /article-body -->
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <div class="logo-icon-f"><i class="fas fa-plus"></i></div>
+                <span>Crescit</span>
+            </div>
+            <p>Cuidando da saúde do seu filho com carinho e responsabilidade. Referência em atendimento pediátrico humanizado em São Paulo.</p>
+            <div class="social-links">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/5511999999999" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#doutores">Doutores</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Artigos do Blog</h3>
+            <ul>
+                <li><a href="blog-surdez.html">Surdez Infantil</a></li>
+                <li><a href="blog-visao.html">Visão na Infância</a></li>
+                <li><a href="blog-fala.html">Atraso na Fala</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contato@crescit.com">contato@crescit.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 – São Paulo, SP</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Crescit. Todos os direitos reservados.</p>
+        <a href="#">Política de Privacidade</a>
+    </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('scroll-progress').style.width = (scrolled / maxScroll * 100) + '%';
+    document.querySelector('header').style.boxShadow = window.scrollY > 20
+        ? '0 2px 20px rgba(0,0,0,.1)' : '0 1px 0 #E0EAE4';
+});
+const hamburger = document.getElementById('hamburger');
+const navbar = document.querySelector('.navbar');
+if (hamburger && navbar) {
+    hamburger.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('active');
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        document.body.classList.toggle('menu-open', isOpen);
+    });
+}
+</script>
+</body>
+</html>

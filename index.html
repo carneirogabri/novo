@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crescit – Clínica Pediátrica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="icon" type="image/jpeg" href="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<header>
+    <div class="logo">
+        <div class="logo-icon">
+            <img src="./imagens/WhatsApp Image 2026-04-04 at 00.02.11.jpeg" alt="Logo Doctors Care" class="navbar-logo-img">
+        </div>
+        <span>Crescit</span>&nbsp;
+    </div>
+
+    <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#doutores">Doutores</a></li>
+            <li class="nav-dropdown">
+                <a href="#" class="nav-dropdown-toggle" id="maisMenuBtn" aria-expanded="false">
+                    Mais <i class="fas fa-chevron-down nav-chevron"></i>
+                </a>
+                <ul class="nav-dropdown-menu" id="maisMenu" role="menu">
+                    <li role="menuitem"><a href="#depoimentos"></i> Depoimentos</a></li>
+                    <li role="menuitem"><a href="#duvidas"></i> Dúvidas</a></li>
+                    <li role="menuitem"><a href="blog.html"></i> Blog</a></li>
+                    <li role="menuitem"><a href="#contato">Agendamento</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header-phone">
+        <i class="fas fa-phone-alt"></i>
+        (11) 4002-8922
+    </div>
+
+    <a href="cadastro.html" class="btn-agendar">criar uma conta</a>
+</header>
+
+<!-- ========================================= -->
+<!-- HERO                                       -->
+<!-- ========================================= -->
+<section id="home" class="hero">
+    <div class="hero-inner">
+        <!-- Conteúdo esquerdo -->
+        <div class="hero-content">
+            <span class="eyebrow">
+                <i class="fas fa-plus-circle"></i> Pediatria para todos
+            </span>
+            <h1 class="hero-title">
+                Cuidado individualizado para a <em>saúde do seu filho</em>
+            </h1>
+            <p class="hero-subtitle">
+                Nossa clínica une especialistas de alto nível, tecnologia moderna e atendimento humanizado — acompanhando cada fase do desenvolvimento infantil com carinho e responsabilidade.
+            </p>
+            <div class="hero-actions">
+                <a href="#contato" class="btn-primary">
+                    <i class="fas fa-calendar-plus"></i> Agendar Consulta
+                </a>
+                <a href="#servicos" class="btn-outline">
+                    Ver Serviços <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-avatars">
+                    <div class="av" title="Dra. Ana Silva">A</div>
+                    <div class="av" title="Dr. Marcos Oliveira">M</div>
+                    <div class="av" title="Dra. Beatriz Costa">B</div>
+                    <div class="av" title="Dr. Ricardo Alves">R</div>
+                    <div class="av">+</div>
+                </div>
+                <div class="hero-stats-text">
+                    <strong>+30 profissionais</strong><br>
+                    em 12 especialidades pediátricas
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual direito -->
+        <div class="hero-visual">
+            <div class="hero-img-wrap">
+                <img src="./imagens/000 (1).png" alt="Equipe pediátrica Doctors Care">
+
+                <!-- Badges flutuantes -->
+                <div class="hero-badge hero-badge-rating">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div class="rating-text">
+                            4.9 no Google
+                            <small>+820 avaliações</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-badge hero-badge-docs">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="docs-text">
+                        Atendimento certificado
+                        <small>CFM credenciada</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================= -->
+<!-- DESTAQUES (3 feature cards)               -->
+<!-- ========================================= -->
+<section class="features">
+    <div class="features-grid">
+        <!-- Card 1 -->
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+            <h3>Atendimento Humanizado</h3>
+            <p>Consultas com atenção completa, suporte pós-atendimento e equipe pronta para acolher sua família em cada etapa.</p>
+            <a href="#sobre" class="feature-link">Conheça nossa história <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 2 — destaque -->
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-list-check"></i></div>
+            <h3>Check-list por especialidade:</h3>
+            <div class="feature-tags">
+                <span class="feature-tag">Pediatria</span>
+                <span class="feature-tag">Nutrição</span>
+                <span class="feature-tag">Neuropediatria</span>
+                <span class="feature-tag">Vacinação</span>
+                <span class="feature-tag">Odontopediatria</span>
+                <span class="feature-tag">Dermatologia</span>
+            </div>
+            <a href="#servicos" class="feature-link" style="margin-top:1.8rem">Ver em detalhes <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-medal"></i></div>
+            <h3>Equipe Altamente Qualificada</h3>
+            <p>Especialistas com residência, pós-graduação e anos de experiência em saúde infantil, garantindo excelência em cada consulta.</p>
+            <a href="#doutores" class="feature-link">Conheça os doutores <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================= -->
+<!-- SOBRE NÓS                                 -->
+<!-- ========================================= -->
+<section class="about" id="sobre">
+    <div class="container-about">
+        <div class="about-images">
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline poster="./imagens/pexels-shvetsa-4226119.jpg">
+                    <source src="./videos/7579336-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </div>
+        </div>
+        <div class="about-content">
+            <p class="sub-title">Sobre Nós</p>
+            <h2 class="about-title">Nossos Ideais e Valores</h2>
+            <p class="description-text">
+                Acreditamos que cuidar da saúde infantil vai muito além de consultas. Nosso compromisso é oferecer um atendimento humanizado, com atenção, carinho e respeito ao tempo de cada criança e à tranquilidade da família.
+            </p>
+            <div class="about-list">
+                <div class="list-item">
+                    <div class="number-badge">I</div>
+                    <div class="text">
+                        <h4>Comunicação Clara e Afetuosa</h4>
+                        <p>Utilizamos uma abordagem simples e acolhedora para que a criança se sinta confortável e os responsáveis bem informados.</p>
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="list-item">
+                    <div class="number-badge">II</div>
+                    <div class="text">
+                        <h4>Ambiente Seguro e Acolhedor</h4>
+                        <p>Criamos um espaço pensado para o bem‑estar infantil, com estrutura adequada para atender com qualidade e segurança.</p>
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="list-item">
+                    <div class="number-badge">III</div>
+                    <div class="text">
+                        <h4>Atendimento Humanizado</h4>
+                        <p>Valorizamos a escuta, o acolhimento e o vínculo com cada criança, tornando cada consulta mais leve e segura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================= -->
+<!-- SERVIÇOS                                   -->
+<!-- ========================================= -->
+<section class="services" id="servicos">
+    <div class="services-inner">
+        <div class="services-left">
+            <span class="eyebrow"><i class="fas fa-stethoscope"></i> O que fazemos</span>
+            <h2 class="section-title">Ampla gama de serviços pediátricos</h2>
+            <p class="section-sub">Oferecemos cuidado completo para garantir o desenvolvimento saudável do seu filho em todas as etapas.</p>
+            <br>
+            <a href="#contato" class="btn-primary" style="margin-top:1rem">
+                <i class="fas fa-calendar-plus"></i> Agendar agora
+            </a>
+        </div>
+        <div class="services-grid">
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-stethoscope"></i></div>
+                <h3>Pediatria Geral</h3>
+            </div>
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-syringe"></i></div>
+                <h3>Vacinação</h3>
+            </div>
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-baby"></i></div>
+                <h3>Puericultura</h3>
+            </div>
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-apple-whole"></i></div>
+                <h3>Nutrição Infantil</h3>
+            </div>
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-brain"></i></div>
+                <h3>Neuropediatria</h3>
+            </div>
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-vial"></i></div>
+                <h3>Exames Clínicos</h3>
+            </div>
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-tooth"></i></div>
+                <h3>Odontopediatria</h3>
+            </div>
+            <div class="svc-card">
+                <div class="svc-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="svc-icon"><i class="fas fa-ear-listen"></i></div>
+                <h3>Fonoaudiologia</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================= -->
+<!-- CTA — EXAMES E ANÁLISES                   -->
+<!-- ========================================= -->
+<div class="exames-cta" style="padding: 0 5%; margin-bottom: 8rem;">
+    <div style="max-width:130rem; margin:0 auto; display:flex; border-radius:2.8rem; overflow:hidden; box-shadow:0 8px 32px rgba(61,122,82,.12); border:1px solid #E0EAE4;">
+        <div class="exames-img">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80" alt="Exames laboratoriais pediátricos">
+        </div>
+        <div class="exames-content">
+            <span class="eyebrow"><i class="fas fa-flask"></i> Laboratório interno</span>
+            <h2>Exames e Análises Pediátricas</h2>
+            <p>Realizamos uma ampla gama de exames laboratoriais com coleta humanizada, resultados ágeis e orientação médica especializada.</p>
+            <div class="exames-actions">
+                <a href="#contato" class="btn-white">Agendar exame</a>
+                <a href="#servicos" class="btn-white-outline">
+                    <i class="fas fa-arrow-right"></i> Saber mais
+                </a>
+            </div>
+        </div>
+        <div class="exames-tags-col">
+            <h4>Exames disponíveis</h4>
+            <span class="etag"><i class="fas fa-tint"></i> Hemograma completo</span>
+            <span class="etag"><i class="fas fa-vial"></i> Urina tipo I</span>
+            <span class="etag"><i class="fas fa-dna"></i> PCR e Proteínas</span>
+            <span class="etag"><i class="fas fa-atom"></i> Hormônios</span>
+            <span class="etag"><i class="fas fa-shield-virus"></i> Alergias IgE</span>
+            <span class="etag"><i class="fas fa-microscope"></i> Imunoglobulinas</span>
+            <span class="etag"><i class="fas fa-plus"></i> E muito mais</span>
+        </div>
+    </div>
+</div>
+
+<!-- ========================================= -->
+<!-- DOUTORES — ACORDEÃO HORIZONTAL            -->
+<!-- ========================================= -->
+<section id="doutores" class="doutores-section">
+    <div class="doutores-top">
+        <div class="doutores-left">
+            <span class="eyebrow"><i class="fas fa-user-md"></i> Nossa equipe</span>
+            <h2 class="doutores-titulo">
+                Especialistas prontos<br>para <span>cuidar.</span>
+            </h2>
+        </div>
+        <div class="doutores-right">
+            <p class="doutores-desc">
+                Reunimos os melhores especialistas em saúde infantil em um único espaço — atendimento humanizado e tecnologia de ponta para cada etapa do desenvolvimento do seu filho.
+            </p>
+            <a href="#contato" class="doutores-btn-header">
+                <i class="fas fa-calendar-plus"></i> Agendar consulta
+            </a>
+        </div>
+    </div>
+
+    <div class="acordeao" id="acordeao">
+
+        <!-- Card 1 — Pediatria Geral -->
+        <div class="ac-card active">
+            <div class="ac-media">
+                <video autoplay muted loop playsinline>
+                    <source src="./imagens/pediatria-geral.jpg" type="video/mp4">
+                </video>
+                <div class="ac-gradient"></div>
+            </div>
+            <div class="ac-collapsed-view">
+                <span class="ac-num">01</span>
+                <div class="ac-icon-box"><i class="fas fa-stethoscope"></i></div>
+                <span class="ac-label-vert">Pediatria Geral</span>
+            </div>
+            <div class="ac-expanded-view">
+                <div class="ac-icon-box"><i class="fas fa-stethoscope"></i></div>
+                <h3 class="ac-nome">Dra. Ana Silva</h3>
+                <p class="ac-specialty">Pediatria Geral</p>
+                <p class="ac-bio">Referência em neonatologia, com acompanhamento integral do desenvolvimento infantil desde o nascimento até a adolescência.</p>
+                <div class="ac-schedule">
+                    <div class="ac-sch-row"><i class="fas fa-calendar"></i><span>Seg · Qua · Sex</span></div>
+                    <div class="ac-sch-row"><i class="fas fa-clock"></i><strong>08:00 – 18:00</strong></div>
+                </div>
+                <p class="ac-crm">CRM/SP 123456</p>
+                <a href="#contato" class="ac-btn">Agendar consulta</a>
+            </div>
+        </div>
+
+        <!-- Card 2 — Neuropediatria -->
+        <div class="ac-card">
+            <div class="ac-media">
+                <video autoplay muted loop playsinline>
+                    <source src="./videos/Neuro.mp4" type="video/mp4">
+                </video>
+                <div class="ac-gradient"></div>
+            </div>
+            <div class="ac-collapsed-view">
+                <span class="ac-num">02</span>
+                <div class="ac-icon-box"><i class="fas fa-brain"></i></div>
+                <span class="ac-label-vert">Neuropediatria</span>
+            </div>
+            <div class="ac-expanded-view">
+                <div class="ac-icon-box"><i class="fas fa-brain"></i></div>
+                <h3 class="ac-nome">Dr. Marcos Oliveira</h3>
+                <p class="ac-specialty">Neuropediatria</p>
+                <p class="ac-bio">Especialista em neurodesenvolvimento e transtornos de aprendizagem, com foco em diagnóstico precoce e acompanhamento multidisciplinar.</p>
+                <div class="ac-schedule">
+                    <div class="ac-sch-row"><i class="fas fa-calendar"></i><span>Terça · Quinta</span></div>
+                    <div class="ac-sch-row"><i class="fas fa-clock"></i><strong>09:00 – 19:00</strong></div>
+                </div>
+                <p class="ac-crm">CRM/SP 654321</p>
+                <a href="#contato" class="ac-btn">Agendar consulta</a>
+            </div>
+        </div>
+
+        <!-- Card 3 — Nutrição -->
+        <div class="ac-card">
+            <div class="ac-media">
+                <video autoplay muted loop playsinline>
+                    <source src="./videos/nutri.mp4" type="video/mp4">
+                </video>
+                <div class="ac-gradient"></div>
+            </div>
+            <div class="ac-collapsed-view">
+                <span class="ac-num">03</span>
+                <div class="ac-icon-box"><i class="fas fa-apple-whole"></i></div>
+                <span class="ac-label-vert">Nutrição Infantil</span>
+            </div>
+            <div class="ac-expanded-view">
+                <div class="ac-icon-box"><i class="fas fa-apple-whole"></i></div>
+                <h3 class="ac-nome">Dra. Beatriz Costa</h3>
+                <p class="ac-specialty">Nutróloga Infantil</p>
+                <p class="ac-bio">Focada em reeducação alimentar e tratamento de alergias alimentares para um crescimento saudável e equilibrado.</p>
+                <div class="ac-schedule">
+                    <div class="ac-sch-row"><i class="fas fa-calendar"></i><span>Segunda a Quinta</span></div>
+                    <div class="ac-sch-row"><i class="fas fa-clock"></i><strong>10:00 – 17:00</strong></div>
+                </div>
+                <p class="ac-crm">CRN 987654</p>
+                <a href="#contato" class="ac-btn">Agendar consulta</a>
+            </div>
+        </div>
+
+        <!-- Card 4 — Cardiologia -->
+        <div class="ac-card">
+            <div class="ac-media">
+                <video autoplay muted loop playsinline>
+                    <source src="./videos/Cardiologista.mp4" type="video/mp4">
+                </video>
+                <div class="ac-gradient"></div>
+            </div>
+            <div class="ac-collapsed-view">
+                <span class="ac-num">04</span>
+                <div class="ac-icon-box"><i class="fas fa-heart-pulse"></i></div>
+                <span class="ac-label-vert">Cardiologia Pediátrica</span>
+            </div>
+            <div class="ac-expanded-view">
+                <div class="ac-icon-box"><i class="fas fa-heart-pulse"></i></div>
+                <h3 class="ac-nome">Dr. Ricardo Alves</h3>
+                <p class="ac-specialty">Cardiologia Pediátrica</p>
+                <p class="ac-bio">Especialista em cardiopatias congênitas, com vasta experiência em ecocardiografia fetal e infantil.</p>
+                <div class="ac-schedule">
+                    <div class="ac-sch-row"><i class="fas fa-calendar"></i><span>Segunda · Quarta</span></div>
+                    <div class="ac-sch-row"><i class="fas fa-clock"></i><strong>08:00 – 14:00</strong></div>
+                </div>
+                <p class="ac-crm">CRM/SP 112233</p>
+                <a href="#contato" class="ac-btn">Agendar consulta</a>
+            </div>
+        </div>
+
+        <!-- Card 5 — Psicologia -->
+        <div class="ac-card">
+            <div class="ac-media">
+                <img src="./img/psicologia.jpg" alt="Psicologia Infantil">
+                <div class="ac-gradient"></div>
+            </div>
+            <div class="ac-collapsed-view">
+                <span class="ac-num">05</span>
+                <div class="ac-icon-box"><i class="fas fa-puzzle-piece"></i></div>
+                <span class="ac-label-vert">Psicologia Infantil</span>
+            </div>
+            <div class="ac-expanded-view">
+                <div class="ac-icon-box"><i class="fas fa-puzzle-piece"></i></div>
+                <h3 class="ac-nome">Dr. Felipe Mendes</h3>
+                <p class="ac-specialty">Psicologia Infantil</p>
+                <p class="ac-bio">Suporte emocional a crianças e adolescentes com ludoterapia para lidar com ansiedade e traumas de forma leve e eficaz.</p>
+                <div class="ac-schedule">
+                    <div class="ac-sch-row"><i class="fas fa-calendar"></i><span>Quarta · Sexta</span></div>
+                    <div class="ac-sch-row"><i class="fas fa-clock"></i><strong>10:00 – 19:00</strong></div>
+                </div>
+                <p class="ac-crm">CRP/SP 998877</p>
+                <a href="#contato" class="ac-btn">Agendar consulta</a>
+            </div>
+        </div>
+
+        <!-- Card 6 — Dermatologia -->
+        <div class="ac-card">
+            <div class="ac-media">
+                <img src="./img/dermatologia.jpg" alt="Dermatologia Pediátrica">
+                <div class="ac-gradient"></div>
+            </div>
+            <div class="ac-collapsed-view">
+                <span class="ac-num">06</span>
+                <div class="ac-icon-box"><i class="fas fa-hand-sparkles"></i></div>
+                <span class="ac-label-vert">Dermatologia</span>
+            </div>
+            <div class="ac-expanded-view">
+                <div class="ac-icon-box"><i class="fas fa-hand-sparkles"></i></div>
+                <h3 class="ac-nome">Dra. Carla Dias</h3>
+                <p class="ac-specialty">Dermatologia Pediátrica</p>
+                <p class="ac-bio">Especialista em dermatites, alergias cutâneas e cuidados com a pele sensível dos recém-nascidos e crianças.</p>
+                <div class="ac-schedule">
+                    <div class="ac-sch-row"><i class="fas fa-calendar"></i><span>Terça · Quinta</span></div>
+                    <div class="ac-sch-row"><i class="fas fa-clock"></i><strong>08:30 – 16:30</strong></div>
+                </div>
+                <p class="ac-crm">CRM/SP 554433</p>
+                <a href="#contato" class="ac-btn">Agendar consulta</a>
+            </div>
+        </div>
+
+    </div><!-- fim .acordeao -->
+</section>
+
+<!-- ========================================= -->
+<!-- DEPOIMENTOS                               -->
+<!-- ========================================= -->
+<section class="testimonials" id="depoimentos">
+    <div class="testimonials-inner">
+        <div class="testimonials-left">
+            <span class="eyebrow"><i class="fas fa-star"></i> Avaliações</span>
+            <h2 class="section-title">Opiniões honestas sobre nossa clínica</h2>
+            <p class="section-sub">Compartilhe sua experiência e ajude outras famílias a encontrar o cuidado que seus filhos merecem.</p>
+          
+        </div>
+        <div class="testimonials-list">
+            <div class="tcard">
+                <div class="tcard-head">
+                    <div class="tcard-author">
+                        <div class="tcard-av">M</div>
+                        <div>
+                            <div class="tcard-name">Maria Fernanda</div>
+                            <div class="tcard-role">Mãe da paciente</div>
+                        </div>
+                    </div>
+                    <div class="tcard-date">15 de março de 2025</div>
+                </div>
+                <div class="tcard-stars">★★★★★</div>
+                <p class="tcard-text">Atendimento humanizado e extremamente profissional. Minha filha ficou à vontade desde a primeira consulta — e isso faz toda a diferença. A Dra. Ana tem uma paciência incrível!</p>
+            </div>
+            <div class="tcard">
+                <div class="tcard-head">
+                    <div class="tcard-author">
+                        <div class="tcard-av" style="background:#D4EDE0; color:#2E6040;">C</div>
+                        <div>
+                            <div class="tcard-name">Carlos Eduardo</div>
+                            <div class="tcard-role">Pai do paciente</div>
+                        </div>
+                    </div>
+                    <div class="tcard-date">28 de fevereiro de 2025</div>
+                </div>
+                <div class="tcard-stars">★★★★★</div>
+                <p class="tcard-text">Excelência em todos os detalhes. A equipe é muito atenciosa, a estrutura da clínica é impecável e o atendimento rápido. Os resultados dos exames chegaram em menos de 24 horas!</p>
+            </div>
+            <div class="tcard">
+                <div class="tcard-head">
+                    <div class="tcard-author">
+                        <div class="tcard-av" style="background:#A8E6BF; color:#1A5C35;">A</div>
+                        <div>
+                            <div class="tcard-name">Ana Clara</div>
+                            <div class="tcard-role">Responsável</div>
+                        </div>
+                    </div>
+                    <div class="tcard-date">10 de fevereiro de 2025</div>
+                </div>
+                <div class="tcard-stars">★★★★★</div>
+                <p class="tcard-text">Profissionais altamente qualificados e muito cuidadosos. Meu filho tinha pavor de médico e hoje vai à consulta tranquilo. Recomendo de olhos fechados para todos os pais!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+  =====================================================================
+  ADICIONE ESTE CSS no seu style.css (antes do @media)
+  =====================================================================
+-->
+<style id="blog-css-to-copy">
+/* ==========================================================================
+   BLOG SECTION
+   ========================================================================== */
+.blog {
+    padding: 8rem 5%;
+    background: var(--bg-light);
+}
+.blog-inner {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 4.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.blog-header-left .section-title { font-size: 3.8rem; margin-bottom: .8rem; }
+.blog-header-left .section-sub { font-size: 1.6rem; max-width: 44rem; }
+.blog-ver-todos {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--green-primary);
+    padding: 1.2rem 2.6rem;
+    border: 2px solid var(--green-primary);
+    border-radius: 5rem;
+    transition: all .25s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.blog-ver-todos:hover {
+    background: var(--green-primary);
+    color: var(--white);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+}
+
+.blog-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform .35s, box-shadow .35s;
+    display: flex;
+    flex-direction: column;
+}
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.blog-card-img {
+    position: relative;
+    overflow: hidden;
+    height: 22rem;
+    flex-shrink: 0;
+}
+.blog-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+    display: block;
+}
+.blog-card:hover .blog-card-img img {
+    transform: scale(1.06);
+}
+.blog-card-category {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+    background: var(--green-primary);
+    color: var(--white);
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: .4rem 1.2rem;
+    border-radius: 5rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.blog-card-body {
+    padding: 2.8rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.blog-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+.blog-card-meta span {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.blog-card-meta span i { font-size: 1.1rem; color: var(--green-primary); }
+
+.blog-card-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+    transition: color .2s;
+}
+.blog-card:hover .blog-card-title { color: var(--green-primary); }
+
+.blog-card-excerpt {
+    font-size: 1.45rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 2.4rem;
+    flex: 1;
+}
+
+.blog-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--border);
+    gap: 1rem;
+}
+.blog-card-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.blog-card-author-av {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    background: var(--green-tag);
+    color: var(--green-primary);
+    font-weight: 800;
+    font-size: 1.4rem;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+}
+.blog-card-author-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+.blog-card-author-role {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+.blog-card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--green-primary);
+    padding: .9rem 1.8rem;
+    border-radius: 5rem;
+    transition: background .25s, transform .2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.blog-card-btn:hover {
+    background: var(--green-hover);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 991px) {
+    .blog-grid { grid-template-columns: 1fr; max-width: 52rem; margin: 0 auto; }
+    .blog-header { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 768px) {
+    .blog-card-img { height: 18rem; }
+}
+</style>
+
+<!-- 
+  =====================================================================
+  ADICIONE ESTE HTML no index.html 
+  (sugerido: após a section #depoimentos e antes do #duvidas)
+  =====================================================================
+-->
+
+<!-- ========================================= -->
+<!-- BLOG                                      -->
+<!-- ========================================= -->
+<section class="blog" id="blog">
+    <div class="blog-inner">
+        <div class="blog-header">
+            <div class="blog-header-left">
+                <span class="eyebrow"><i class="fas fa-newspaper"></i> Blog &amp; Saúde</span>
+                <h2 class="section-title">Informação que cuida</h2>
+                <p class="section-sub">Conteúdo de qualidade para ajudar famílias a identificar sinais precoces e cuidar melhor dos seus filhos.</p>
+            </div>
+            <a href="blog.html" class="blog-ver-todos">
+                Ver todos os artigos <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="blog-grid">
+
+            <!-- Card 1 — Surdez -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <span class="blog-card-category">Audição</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1576765608622-067973a79f53?w=600&q=80"
+                        alt="Criança sendo avaliada por fonoaudióloga"
+                        loading="lazy">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span><i class="fas fa-calendar"></i> 2 de abril de 2026</span>
+                        <span><i class="fas fa-clock"></i> 6 min de leitura</span>
+                    </div>
+                    <h3 class="blog-card-title">Surdez Infantil: primeiros sinais e como agir</h3>
+                    <p class="blog-card-excerpt">
+                        A perda auditiva na infância pode comprometer o desenvolvimento da linguagem e da aprendizagem. Saiba identificar os sinais ainda nos primeiros meses de vida e o que fazer diante deles.
+                    </p>
+                    <div class="blog-card-footer">
+                        <div class="blog-card-author">
+                            <div class="blog-card-author-av">A</div>
+                            <div>
+                                <div class="blog-card-author-name">Dra. Ana Silva</div>
+                                <div class="blog-card-author-role">Pediatria Geral</div>
+                            </div>
+                        </div>
+                        <a href="blog-surdez.html" class="blog-card-btn">
+                            Ler artigo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 — Visão -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <span class="blog-card-category">Visão</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600&q=80"
+                        alt="Exame de visão em criança"
+                        loading="lazy">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span><i class="fas fa-calendar"></i> 28 de março de 2026</span>
+                        <span><i class="fas fa-clock"></i> 5 min de leitura</span>
+                    </div>
+                    <h3 class="blog-card-title">Visão na infância: quando o olhar pede atenção</h3>
+                    <p class="blog-card-excerpt">
+                        Problemas de visão não detectados precocemente podem afetar o desempenho escolar e o desenvolvimento cognitivo. Descubra os sinais de alerta e a importância do exame oftalmológico desde o berço.
+                    </p>
+                    <div class="blog-card-footer">
+                        <div class="blog-card-author">
+                            <div class="blog-card-author-av" style="background:#D4EDE0; color:#2E6040;">R</div>
+                            <div>
+                                <div class="blog-card-author-name">Dr. Ricardo Alves</div>
+                                <div class="blog-card-author-role">Cardiologia Pediátrica</div>
+                            </div>
+                        </div>
+                        <a href="blog-visao.html" class="blog-card-btn">
+                            Ler artigo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 — Fala -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <span class="blog-card-category">Fala</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&q=80"
+                        alt="Criança em sessão de fonoaudiologia"
+                        loading="lazy">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span><i class="fas fa-calendar"></i> 15 de março de 2026</span>
+                        <span><i class="fas fa-clock"></i> 7 min de leitura</span>
+                    </div>
+                    <h3 class="blog-card-title">Atraso na fala: o que é normal e o que merece avaliação</h3>
+                    <p class="blog-card-excerpt">
+                        Cada criança tem seu ritmo, mas alguns marcos do desenvolvimento da linguagem não devem ser ignorados. Entenda quando buscar um fonoaudiólogo e como estimular a comunicação em casa.
+                    </p>
+                    <div class="blog-card-footer">
+                        <div class="blog-card-author">
+                            <div class="blog-card-author-av" style="background:#A8E6BF; color:#1A5C35;">B</div>
+                            <div>
+                                <div class="blog-card-author-name">Dra. Beatriz Costa</div>
+                                <div class="blog-card-author-role">Nutróloga Infantil</div>
+                            </div>
+                        </div>
+                        <a href="blog-fala.html" class="blog-card-btn">
+                            Ler artigo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ========================================= -->
+<!-- PERGUNTAS FREQUENTES                      -->
+<!-- ========================================= -->
+<section class="faq" id="duvidas">
+    <div class="faq-inner">
+        <div class="section-header" style="text-align:center; margin-bottom:5rem;">
+            <span class="eyebrow" style="margin-bottom:1.5rem; display:inline-flex;">
+                <i class="fas fa-question-circle"></i> Dúvidas
+            </span>
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <p class="section-sub">Encontre respostas rápidas para as dúvidas mais comuns sobre nossos serviços.</p>
+        </div>
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary>A clínica aceita planos de saúde? <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-content">
+                    <p>Sim! Atendemos os principais convênios da região, incluindo Unimed, Bradesco Saúde, SulAmérica e outros. Entre em contato com nossa recepção para verificar a cobertura do seu plano específico.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>Como funciona a primeira consulta? <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-content">
+                    <p>A primeira consulta é mais longa, onde realizamos uma anamnese completa, avaliamos o histórico familiar e o desenvolvimento físico e motor da criança. Recomendamos trazer a carteira de vacinação e exames anteriores.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>Qual o horário de funcionamento? <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-content">
+                    <p>Funcionamos de segunda a sexta-feira, das 08h às 19h, e aos sábados das 08h às 12h para consultas agendadas e vacinação. Feriados mediante consulta prévia.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>A clínica atende emergências? <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-content">
+                    <p>Nosso foco é atendimento eletivo e preventivo. Para urgências leves (febre, vômito, cortes simples), atendemos no mesmo dia mediante disponibilidade. Em casos graves, recomendamos o pronto-atendimento infantil mais próximo.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>Quais são as formas de pagamento? <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-content">
+                    <p>Aceitamos dinheiro, cartões de crédito (até 12x) e débito, PIX e transferências bancárias. Consultas pelo convênio seguem a tabela do plano contratado.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>Como faço para cancelar ou remarcar uma consulta? <i class="fas fa-chevron-down"></i></summary>
+                <div class="faq-content">
+                    <p>Cancele ou remarque com pelo menos 24h de antecedência pelo WhatsApp (11) 4002-8922 ou pelo telefone. Cancelamentos com menos de 2h podem estar sujeitos a taxa de confirmação.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- FOOTER                                    -->
+<!-- ========================================= -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <div class="logo-icon-f"><i class="fas fa-plus"></i></div>
+                <span>Doctors</span>&nbsp;Care
+            </div>
+            <p>Cuidando da saúde do seu filho com carinho e responsabilidade desde o primeiro dia. Referência em atendimento pediátrico humanizado em São Paulo.</p>
+            <div class="social-links">
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/5511999999999" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#doutores">Doutores</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="blog.html">Blog de Saúde</a></li>
+                <li><a href="#contato">Agendar Consulta</a></li>
+                <li><a href="#">Portal do Paciente</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contato@doctorscare.com">contato@doctorscare.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 – São Paulo, SP</p>
+                <p><i class="fas fa-clock"></i> Seg–Sex: 08h às 19h | Sáb: 08h às 12h</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Doctors Care. Todos os direitos reservados.</p>
+        <a href="#">Política de Privacidade</a>
+    </div>
+</footer>
+
+<!-- ========================================= -->
+<!-- SCRIPTS                                   -->
+<!-- ========================================= -->
+<script>
+/* ── Scroll progress ─────────────────────────── */
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('scroll-progress').style.width =
+        (scrolled / maxScroll * 100) + '%';
+});
+
+/* ── Header scroll shadow ────────────────────── */
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.style.boxShadow = window.scrollY > 20
+        ? '0 2px 20px rgba(0,0,0,.1)'
+        : '0 1px 0 #E0EAE4';
+});
+
+/* ── Hamburger + Navbar ──────────────────────── */
+const hamburger = document.getElementById('hamburger');
+const navbar    = document.querySelector('.navbar');
+const dropBtn   = document.getElementById('maisMenuBtn');
+const dropMenu  = document.getElementById('maisMenu');
+
+if (hamburger && navbar) {
+    hamburger.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('active');
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        document.body.classList.toggle('menu-open', isOpen);
+    });
+    navbar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        });
+    });
+}
+
+if (dropBtn && dropMenu) {
+    dropBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = dropMenu.classList.toggle('open');
+        dropBtn.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('click', (e) => {
+        if (!dropBtn.closest('.nav-dropdown').contains(e.target)) {
+            dropMenu.classList.remove('open');
+            dropBtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+}
+
+/* ── Acordeão de doutores ────────────────────── */
+(function () {
+    const cards = document.querySelectorAll('#acordeao .ac-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            cards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+        });
+    });
+})();
+
+/* ── Nav active link on scroll ───────────────── */
+const sections = document.querySelectorAll('section[id], div[id]');
+const navLinks  = document.querySelectorAll('.navbar ul li a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 120) {
+            current = section.getAttribute('id');
+        }
+    });
+    navLinks.forEach(link => {
+        link.classList.remove('active-nav');
+        if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active-nav');
+        }
+    });
+});
+
+/* ── Animação de entrada nas seções (Intersection Observer) ── */
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.feature-card, .svc-card, .tcard, .faq-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+    observer.observe(el);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const style = document.createElement('style');
+    style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
+    document.head.appendChild(style);
+});
+
+/* ── Formulário de agendamento ───────────────── */
+function enviarAgendamento() {
+    const nome = document.getElementById('nome').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
+    const especialidade = document.getElementById('especialidade').value;
+
+    if (!nome || !telefone || !especialidade) {
+        alert('Por favor, preencha ao menos nome, telefone e especialidade.');
+        return;
+    }
+
+    // Simula envio — em produção, conectar ao backend ou WhatsApp
+    const msg = encodeURIComponent(
+        `Olá, quero agendar uma consulta!\nNome: ${nome}\nEspecialidade: ${especialidade}\nTelefone: ${telefone}`
+    );
+    window.open(`https://wa.me/5511999999999?text=${msg}`, '_blank');
+}
+</script>
+
+</body>
+</html>
